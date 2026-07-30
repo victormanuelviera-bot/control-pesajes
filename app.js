@@ -37,6 +37,8 @@ const producto = document.getElementById("producto");
 
 const guardar = document.getElementById("guardar");
 
+const nuevoLote = document.getElementById("nuevoLote");
+
 const lista = document.getElementById("lista");
 
 const totalNeto = document.getElementById("totalNeto");
@@ -347,4 +349,32 @@ function actualizarLista(){
     actualizarTotales();
 
 }
+//====================================================
+// Nuevo Lote
+//====================================================
 
+nuevoLote.addEventListener("click", finalizarLote);
+
+function finalizarLote(){
+
+    if(pesajes.length===0){
+
+        return;
+
+    }
+
+    if(!confirm("¿Finalizar el lote y comenzar uno nuevo?")){
+
+        return;
+
+    }
+
+    pesajes = [];
+
+    guardarLocal();
+
+    actualizarLista();
+
+    limpiarFormulario();
+
+}

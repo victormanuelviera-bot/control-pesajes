@@ -256,8 +256,9 @@ h2{
 
     gap:12px;
 
-}
+    margin-top:8px;
 
+}
 .pin{
 
     width:60px;
@@ -271,8 +272,7 @@ h2{
     font-size:24px;
 
     flex-shrink:0;
-    gap:12px;
-
+ 
 }
 
 /*--------------------------------*/

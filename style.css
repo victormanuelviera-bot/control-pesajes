@@ -258,4 +258,16 @@ h2{
 
     }
 
+.secundario{
+
+    margin-top:10px;
+
+    background:#666;
+
+}
+
+.secundario:hover{
+
+    background:#444;
+
 }
